@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Project_Udemy]">
+  <parameter name="url" value="https://www.udemy.com/"/>
+  <test name="Module1_Login">
+    <parameter name="url" value="https://www.udemy.com/"/>
+    <classes>
+      <class name="com.qa.testscripts.Module1_Login"/>
+    </classes>
+  </test> <!-- Module1_Login -->
+</suite> <!-- Failed suite [Project_Udemy] -->
