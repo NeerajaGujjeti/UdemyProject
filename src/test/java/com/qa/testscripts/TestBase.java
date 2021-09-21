@@ -15,10 +15,12 @@ public class TestBase {
    WebDriver driver;
    Module1_LoginPage login;
 	
+	
 	@BeforeClass
 	@Parameters("url")
 	public void setUp(String Url) throws InterruptedException {
 
+		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Raana\\Downloads\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -33,6 +35,9 @@ public class TestBase {
 			Reporter.log("URL Launch Failed ", true);
 		
 		login = new Module1_LoginPage(driver);
+		
+		
+		
 	}
 		@AfterClass
 		public void tearDown() {
