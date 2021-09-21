@@ -10,11 +10,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
 import com.qa.pages.Module1_LoginPage;
+import com.qa.pages.Module2_SignUpPage;
 
 public class TestBase {
-   WebDriver driver;
+   public static WebDriver driver;
    Module1_LoginPage login;
-	
+   Module2_SignUpPage signUp;
 	
 	@BeforeClass
 	@Parameters("url")
@@ -33,10 +34,8 @@ public class TestBase {
 			Reporter.log("URL Launched Sucessfully", true);
 		else
 			Reporter.log("URL Launch Failed ", true);
-		
 		login = new Module1_LoginPage(driver);
-		
-		
+		signUp = new Module2_SignUpPage(driver);
 		
 	}
 		@AfterClass

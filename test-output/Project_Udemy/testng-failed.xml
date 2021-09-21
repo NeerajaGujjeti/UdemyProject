@@ -8,6 +8,12 @@
       <class name="com.qa.testscripts.Module1_Login"/>
     </classes>
   </test> <!-- Module1_Login -->
+  <test name="Module2_SignUp">
+    <parameter name="url" value="https://www.udemy.com/"/>
+    <classes>
+      <class name="com.qa.testscripts.Module2_SignUp"/>
+    </classes>
+  </test> <!-- Module2_SignUp -->
   <test name="Module1_Login(failed)">
     <parameter name="url" value="https://www.udemy.com/"/>
     <classes>
@@ -15,10 +21,18 @@
         <methods>
           <include name="setUp"/>
           <include name="login"/>
+          <include name="test2"/>
           <include name="tearDown"/>
+          <include name="test5"/>
           <include name="test1"/>
         </methods>
       </class> <!-- com.qa.testscripts.Module1_Login -->
+      <class name="com.qa.testscripts.Module2_SignUp">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.testscripts.Module2_SignUp -->
     </classes>
   </test> <!-- Module1_Login(failed) -->
 </suite> <!-- Failed suite [Project_Udemy] -->

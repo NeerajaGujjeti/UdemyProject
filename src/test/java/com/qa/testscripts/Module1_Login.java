@@ -10,9 +10,11 @@ when clicking on the forgot password link.*/
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import com.qa.pages.Module1_LoginPage;
+
 public class Module1_Login extends TestBase {
 	
-	
+	//Module1_LoginPage login = new Module1_LoginPage(driver);
 	SoftAssert sa = new SoftAssert();
 	
 	/*1)Verify the login screen contains elements as email,password,login button,
